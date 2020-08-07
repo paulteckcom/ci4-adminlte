@@ -8,7 +8,9 @@
 		"php": ">=7.2",
 		"codeigniter4/framework": "^4",
 		"ccxt/ccxt": "^1.31",
-		"bvrignaud/ci4-admin": "^0.0.7"
+		"bvrignaud/ci4-admin": "^0.0.7",
+		"vittominacori/coinmarketcap-php": "^1.1",
+		"dzarezenko/coinmarketcap-api": "dev-master"
 	},
 	"require-dev": {
 		"fzaninotto/faker": "^1.9@dev",

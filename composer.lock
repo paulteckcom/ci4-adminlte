@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a22900d17ef3cd23676d1a14c0b8c18",
+    "content-hash": "3b1113e2d3d082709d1fe626da67ab92",
     "packages": [
         {
             "name": "bvrignaud/ci4-admin",
@@ -48,16 +48,16 @@
         },
         {
             "name": "ccxt/ccxt",
-            "version": "1.31.55",
+            "version": "1.31.85",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ccxt/ccxt.git",
-                "reference": "00ed95128b79bba1fa7af59ee8ff603a05f61a0c"
+                "reference": "e8b83c1f4587d4c21972e266b65c89043f49a887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ccxt/ccxt/zipball/00ed95128b79bba1fa7af59ee8ff603a05f61a0c",
-                "reference": "00ed95128b79bba1fa7af59ee8ff603a05f61a0c",
+                "url": "https://api.github.com/repos/ccxt/ccxt/zipball/e8b83c1f4587d4c21972e266b65c89043f49a887",
+                "reference": "e8b83c1f4587d4c21972e266b65c89043f49a887",
                 "shasum": ""
             },
             "require": {
@@ -315,7 +315,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-07-20T02:11:36+00:00"
+            "time": "2020-07-23T19:43:04+00:00"
         },
         {
             "name": "codeigniter4/framework",
@@ -362,6 +362,49 @@
             "description": "The CodeIgniter framework v4",
             "homepage": "https://codeigniter.com",
             "time": "2020-07-16T03:44:28+00:00"
+        },
+        {
+            "name": "dzarezenko/coinmarketcap-api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dzarezenko/coinmarketcap-api.git",
+                "reference": "5967a792c2244e18aaa7587a308463b0e33feea0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dzarezenko/coinmarketcap-api/zipball/5967a792c2244e18aaa7587a308463b0e33feea0",
+                "reference": "5967a792c2244e18aaa7587a308463b0e33feea0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "coinmarketcap\\api\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmytro Zarezenko",
+                    "email": "dmytro.zarezenko@gmail.com",
+                    "homepage": "https://github.com/dzarezenko",
+                    "role": "Development"
+                }
+            ],
+            "description": "PHP wrapper for the CoinMarketCap API.",
+            "homepage": "https://github.com/dzarezenko/coinmarketcap-api",
+            "keywords": [
+                "api",
+                "coinmarketcap"
+            ],
+            "time": "2018-03-17T10:55:34+00:00"
         },
         {
             "name": "kint-php/kint",
@@ -541,6 +584,52 @@
             "time": "2020-05-20T16:45:56+00:00"
         },
         {
+            "name": "mashape/unirest-php",
+            "version": "v3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mashape/unirest-php.git",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mashape/unirest-php/zipball/842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.1.*",
+                "phpunit/phpunit": "~4.4"
+            },
+            "suggest": {
+                "ext-json": "Allows using JSON Bodies for sending and parsing requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Unirest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Unirest PHP",
+            "homepage": "https://github.com/Mashape/unirest-php",
+            "keywords": [
+                "client",
+                "curl",
+                "http",
+                "https",
+                "rest"
+            ],
+            "time": "2016-08-11T17:49:21+00:00"
+        },
+        {
             "name": "pear/console_table",
             "version": "v1.3.1",
             "source": {
@@ -718,6 +807,52 @@
                 }
             ],
             "time": "2020-07-14T12:35:20+00:00"
+        },
+        {
+            "name": "vittominacori/coinmarketcap-php",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vittominacori/coinmarketcap-php.git",
+                "reference": "d15ebaa0decbc076003a0da7d1d687b975df7408"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vittominacori/coinmarketcap-php/zipball/d15ebaa0decbc076003a0da7d1d687b975df7408",
+                "reference": "d15ebaa0decbc076003a0da7d1d687b975df7408",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "mashape/unirest-php": "^3.0",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoinMarketCap\\": "src/lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vittorio Minacori",
+                    "homepage": "https://github.com/vittominacori"
+                }
+            ],
+            "description": "A PHP wrapper for CoinMarketCap API",
+            "homepage": "https://github.com/vittominacori/coinmarketcap-php",
+            "keywords": [
+                "client",
+                "coinmarketcap",
+                "crypto",
+                "exchange"
+            ],
+            "time": "2019-12-08T16:57:24+00:00"
         }
     ],
     "packages-dev": [
@@ -2388,6 +2523,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "dzarezenko/coinmarketcap-api": 20,
         "fzaninotto/faker": 20
     },
     "prefer-stable": false,

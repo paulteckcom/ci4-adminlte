@@ -14,7 +14,7 @@ class AccountController extends Controller
 	 *
 	 * @var \CodeIgniter\Session\Session
 	 */
-	protected $session;
+	public $session;
 
 	/**
 	 * Authentication settings.
@@ -31,6 +31,9 @@ class AccountController extends Controller
 
 		// load auth settings
 		$this->config = config('Auth');
+
+		// load layout helper
+		helper('layout_helper');
 	}
 
     //--------------------------------------------------------------------
@@ -44,7 +47,7 @@ class AccountController extends Controller
 			return redirect()->to('login');
 		}
 
-		return view($this->config->views['account'], [
+		return render($this, 'auth/account', [
 			'userData' => $this->session->userData,
 			'config' => $this->config
 		]);
@@ -59,7 +62,7 @@ class AccountController extends Controller
 	{
 		// update user, validation happens in model
 		$users = new UserModel();
-		$users->setValidationRules('updateAccount');
+		$users->setRules('updateAccount');
 		$user = [
 			'id'  	=> $this->session->get('userData.id'),
 			'name' 	=> $this->request->getPost('name')

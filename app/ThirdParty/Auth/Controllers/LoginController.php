@@ -89,7 +89,7 @@ class LoginController extends Controller
             'new_email' 	=> $user['new_email']
         ]);
 
-        return redirect()->to('account');
+        return redirect()->to('home');
 	}
 
     //--------------------------------------------------------------------
@@ -99,8 +99,8 @@ class LoginController extends Controller
 	 */
 	public function logout()
 	{
-		$this->session->remove(['isLoggedIn', 'userData']);
-
+		//$this->session->remove(['isLoggedIn', 'userData']);
+		session_destroy();
         return redirect()->to('login');
 	}
 

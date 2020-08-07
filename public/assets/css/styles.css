@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .favorites-lists {
+    display: none;
+  }
+
+  .responsive-lists {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .favorites-lists {
+    display: block;
+  }
+
+  .responsive-lists {
+    display: none;
+  }
+}
+
+.nav-custom {
+  background-color: #000 !important;
+}

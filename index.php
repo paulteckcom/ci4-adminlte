@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 // Valid PHP Version?
 $minPHPVersion = '7.2';
@@ -27,6 +30,8 @@ $pathsPath = realpath(FCPATH . 'app/Config/Paths.php');
 
 // Ensure the current directory is pointing to the front controller's directory
 chdir(__DIR__);
+
+//require FCPATH.'vendor/autoload.php';
 
 // Load our paths config file
 require $pathsPath;
